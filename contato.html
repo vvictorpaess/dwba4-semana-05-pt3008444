@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Contato - IFSP - Pirituba</title>
+    <script src="js/disabling.js"></script>
+  </head>
+
+
+  <body>
+
+    <header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
+      <nav>
+        <object width="100%" height="160px" data="menu.html"></object>            
+      </nav>
+    </header>
+
+    <h1> Mande uma mensagem </h1>
+
+    <form action="msg" method="POST">
+
+      <ul>
+        <li>
+          <label for="nome">Nome</label>
+          <input name="nome">
+        </li>
+        <li>
+          <label for="email">E-Mail</label>
+          <input name="email" type="email">
+        </li>
+        <li>
+          <label for="telefone">Telefone</label>
+          <input name="telefone"> (99) 99999-9999
+        </li>
+        <li>
+          Assunto
+          <select name="assunto">
+          <option value="select">-- Selecione --</option> 
+          <option value="sug">Sugestão</option>        
+          <option value="rec">Reclamação</option>     
+        </select>
+        </li>
+        <li>
+          Mensagem
+          <textarea name="textarea"></textarea>
+        </li>
+        <li> 
+          <fieldset>
+            <legend>Opções de Resposta</legend>
+            <label for="options">E-Mail</label> <input type="radio" id="em">
+            <label for="options">Telefone</label> <input type="radio" id="tel">
+          </fieldset>
+        </li>
+        <li>          
+           <input type="submit" value="Enviar" />
+        </li>
+      </ul>
+    </form>
+
+    <nav>
+      <object width="100%" data="footer.html"></object>            
+    </nav>
+  </body>
+</html>

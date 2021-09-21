@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Contato - IFSP - Pirituba</title>
+    <script src="js/disabling.js"></script>
+  </head>
+
+
+  <body>
+
+    <header id="cabecalho">
+      <nav>
+          <object width="100%" height="160px" data="menu.html"></object>            
+      </nav>
+    </header>
+
+    <h1> Inscreva-se </h1>
+
+    <form action="novoEvento" method="POST"> 
+      <fieldset>
+        Evento
+        <select name="evento">
+          <option value="select">-- Selecione --</option> 
+          <option value="VSA">Voe sem asas</option>        
+          <option value="FJ"> Festa Junina</option>        
+          <option value="ST">Semana de tecnologia</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações de Acesso</legend>
+        <label for="nome">Nome Completo</label>
+        <input name="nome"> <br/> <br/>
+         <label for="nome">E-mail</label>
+        <input name="email" type="email"> <br/> <br/>
+         <label for="nome">Celular</label>
+        <input name="nome"> (99) 99999-9999 <br/> <br/>
+
+          <fieldset>
+            <legend>Sexo</legend>
+            <label for="sexo">Masculino</label> <input type="radio" id="m">
+            <label for="sexo">Feminino</label> <input type="radio" id="f">
+          </fieldset> <br/>
+
+        <label for="data">Data de Nascimento</label>
+        <input name="data" type="date"> <br/> <br/>
+
+        <label for="cor">Cor Favorita</label>
+        <input name="cor" type="color"> <br/> <br/>
+
+        <label for="github">Perfil no Github</label>
+        <input name="github"> <br/> <br/>
+      </fieldset> <br/>
+
+      <input type="submit" value="Inscrever" />
+      <input type="reset" value="Limpar" />
+    </form>
+
+
+    <nav>
+        <object width="100%" data="footer.html"></object>            
+    </nav>
+  </body>
+</html>
